@@ -21,4 +21,4 @@ jobs:
 
     - name: Run deployment script on GCE
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.GCE_USERNAME }}@${{ secrets.GCE_HOST }} 'cd hello-express && bash ~/deploy.sh'
+        ssh -o StrictHostKeyChecking=no ${{ secrets.GCE_USERNAME }}@${{ secrets.GCE_HOST }} 'cd /home/thakaranipratham/hello-express && bash ~/deploy.sh'
